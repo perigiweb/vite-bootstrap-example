@@ -1,0 +1,53 @@
+@import "../../node_modules/bootstrap/scss/functions";
+
+$dark: #0a2540;
+$orange: #ff7902;
+$gray: #d9d9d9;
+$light-blue: #e7f0f9;
+
+$primary: #0b6bc4;
+$warning: $orange;
+
+$enable-shadows: true;
+
+$font-family-sans-serif:  "Poppins", system-ui, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-size-base:          .9375rem;
+
+$body-color: $dark;
+
+//$grid-gutter-width: 2rem;
+
+$border-radius:     .25rem;
+$border-radius-sm:  .125rem;
+$border-radius-lg:  .375rem;
+$border-radius-xl:  .75rem;
+$border-radius-xxl: 1.5rem;
+
+$card-border-width: 0;
+$card-bg:           #fff;
+
+$link-hover-color:  $orange;
+
+$navbar-dark-color: #fff;
+
+@import "../../node_modules/bootstrap/scss/variables";
+
+$custom-colors: (
+  'gray': $gray,
+  'light-gray': $gray-200,
+  'light-blue': $light-blue
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$card-box-shadow:   $box-shadow;
+
+$aspect-ratios: map-merge($aspect-ratios, (
+  '2x3': calc(3 / 2 * 100%),
+  '3x4': calc(4 / 3 * 100%),
+  '5x6': calc(6 / 5 * 100%)
+));
+
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/utilities";
